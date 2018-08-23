@@ -51,7 +51,7 @@
             <field name="related_model" search="[('model','=','stock.move')]"/>
         </record>
         <record model="babi.expression" id="stock_move">
-            <field name="ttype">integer</field>
+            <field name="ttype">int</field>
             <field name="model" search="[('model','=','stock.move')]"/>
             <field name="expression">o.id</field>
             <field name="name">ID</field>
