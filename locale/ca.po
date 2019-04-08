@@ -1,4 +1,4 @@
-# 
+#
 msgid ""
 msgstr "Content-Type: text/plain; charset=utf-8\n"
 
@@ -46,7 +46,7 @@ msgstr "Quantitat prevista"
 
 msgctxt "model:babi.expression,name:stock_move"
 msgid "ID"
-msgstr "Identificador"
+msgstr "ID"
 
 msgctxt "model:babi.expression,name:stock_move_date"
 msgid "Date"
