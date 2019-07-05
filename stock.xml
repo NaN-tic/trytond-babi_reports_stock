@@ -219,28 +219,28 @@
             <field name="expression"
                 ref="babi_reports_product.product_category"/>
             <field name="name">Category</field>
-            <field name="sequence">1</field>
+            <field name="sequence" eval="1"/>
         </record>
         <record model="babi.dimension" id="product_category_product__product">
             <field name="report" ref="product_category_product"/>
             <field name="expression"
                 ref="babi_reports_product.product_rec_name"/>
             <field name="name">Product</field>
-            <field name="sequence">2</field>
+            <field name="sequence" eval="2"/>
         </record>
         <record model="babi.measure" id="product_category_product__quantity">
             <field name="report" ref="product_category_product"/>
             <field name="expression" ref="product_real_quantity"/>
             <field name="name">Quantity</field>
             <field name="aggregate">sum</field>
-            <field name="sequence">1</field>
+            <field name="sequence" eval="1"/>
         </record>
         <record model="babi.measure" id="product_category_product__cost">
             <field name="report" ref="product_category_product"/>
             <field name="expression" ref="product_stock_cost"/>
             <field name="name">Cost</field>
             <field name="aggregate">sum</field>
-            <field name="sequence">1</field>
+            <field name="sequence" eval="1"/>
         </record>
 
         <!-- Category - Product | Quantity, Stock Cost-->
@@ -263,14 +263,14 @@
             <field name="expression"
                 ref="babi_reports_product.product_category"/>
             <field name="name">Category</field>
-            <field name="sequence">1</field>
+            <field name="sequence" eval="1"/>
         </record>
         <record model="babi.dimension"
                 id="product_category_product_quantities__product">
             <field name="report" ref="product_category_product_quantities"/>
             <field name="expression" ref="babi_reports_product.product_name"/>
             <field name="name">Product</field>
-            <field name="sequence">2</field>
+            <field name="sequence" eval="2"/>
         </record>
         <record model="babi.measure"
                 id="product_category_product_quantities__virtual">
@@ -278,7 +278,7 @@
             <field name="expression" ref="product_virtual_quantity"/>
             <field name="name">Forecast Quantity</field>
             <field name="aggregate">sum</field>
-            <field name="sequence">3</field>
+            <field name="sequence" eval="3"/>
         </record>
         <record model="babi.measure"
                 id="product_category_product_quantities__quantity">
@@ -286,7 +286,7 @@
             <field name="expression" ref="product_real_quantity"/>
             <field name="name">Real Quantity</field>
             <field name="aggregate">sum</field>
-            <field name="sequence">4</field>
+            <field name="sequence" eval="4"/>
         </record>
         <record model="babi.measure"
                 id="product_category_product_quantities__cost">
@@ -294,7 +294,7 @@
             <field name="expression" ref="product_stock_cost"/>
             <field name="name">Cost</field>
             <field name="aggregate">sum</field>
-            <field name="sequence">5</field>
+            <field name="sequence" eval="5"/>
         </record>
 
         <!-- Product | Quantity, Stock Cost-->
@@ -315,28 +315,28 @@
             <field name="report" ref="product_product_quantities"/>
             <field name="expression" ref="babi_reports_product.product_name"/>
             <field name="name">Product</field>
-            <field name="sequence">1</field>
+            <field name="sequence" eval="1"/>
         </record>
         <record model="babi.measure" id="product_product_quantities__virtual">
             <field name="report" ref="product_product_quantities"/>
             <field name="expression" ref="product_virtual_quantity"/>
             <field name="name">Forecast Quantity</field>
             <field name="aggregate">sum</field>
-            <field name="sequence">2</field>
+            <field name="sequence" eval="2"/>
         </record>
         <record model="babi.measure" id="product_product_quantities__quantity">
             <field name="report" ref="product_product_quantities"/>
             <field name="expression" ref="product_real_quantity"/>
             <field name="name">Real Quantity</field>
             <field name="aggregate">sum</field>
-            <field name="sequence">3</field>
+            <field name="sequence" eval="3"/>
         </record>
         <record model="babi.measure" id="product_product_quantities__cost">
             <field name="report" ref="product_product_quantities"/>
             <field name="expression" ref="product_stock_cost"/>
             <field name="name">Cost</field>
             <field name="aggregate">sum</field>
-            <field name="sequence">4</field>
+            <field name="sequence" eval="4"/>
         </record>
 
         <!-- Year - Month | Delay -->
@@ -355,20 +355,20 @@
             <field name="report" ref="stock_move_year_month_delay"/>
             <field name="expression" ref="stock_move_year"/>
             <field name="name">Year</field>
-            <field name="sequence">1</field>
+            <field name="sequence" eval="1"/>
         </record>
         <record model="babi.dimension" id="stock_move_year_month_delay__month">
             <field name="report" ref="stock_move_year_month_delay"/>
             <field name="expression" ref="stock_move_month"/>
             <field name="name">Month</field>
-            <field name="sequence">2</field>
+            <field name="sequence" eval="2"/>
         </record>
         <record model="babi.measure" id="stock_move_year_month_delay__delay">
             <field name="report" ref="stock_move_year_month_delay"/>
             <field name="expression" ref="stock_move_delay"/>
             <field name="name">Delay</field>
             <field name="aggregate">avg</field>
-            <field name="sequence">1</field>
+            <field name="sequence" eval="1"/>
         </record>
     </data>
 </tryton>
