@@ -1,6 +1,17 @@
 #
+# Albert Cervera i Areny <albert@nan-tic.com>, 2023.
 msgid ""
-msgstr "Content-Type: text/plain; charset=utf-8\n"
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Last-Translator: Albert Cervera i Areny <albert@nan-tic.com>\n"
+"PO-Revision-Date: 2023-08-17 12:53+0200\n"
+"Project-Id-Version: \n"
+"Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
+"Language: ca_ES\n"
+"Content-Transfer-Encoding: 8bit\n"
+"MIME-Version: 1.0\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 22.12.3\n"
 
 msgctxt "model:babi.dimension,name:product_category_product__category"
 msgid "Category"
@@ -48,6 +59,22 @@ msgctxt "model:babi.expression,name:stock_move"
 msgid "ID"
 msgstr "ID"
 
+msgctxt "model:babi.expression,name:stock_move_amount"
+msgid "Amount"
+msgstr "Importe"
+
+msgctxt "model:babi.expression,name:stock_move_cost_amount"
+msgid "Cost Amount"
+msgstr "Coste total"
+
+msgctxt "model:babi.expression,name:stock_move_cost_price"
+msgid "Cost Price"
+msgstr "Precio de coste"
+
+msgctxt "model:babi.expression,name:stock_move_currency"
+msgid "Currency"
+msgstr "Moneda"
+
 msgctxt "model:babi.expression,name:stock_move_date"
 msgid "Date"
 msgstr "Fecha"
@@ -59,6 +86,10 @@ msgstr "Día"
 msgctxt "model:babi.expression,name:stock_move_delay"
 msgid "Delay (in days)"
 msgstr "Desfase (en días)"
+
+msgctxt "model:babi.expression,name:stock_move_internal_quantity"
+msgid "Internal Quantity"
+msgstr "Cantidad interna"
 
 msgctxt "model:babi.expression,name:stock_move_month"
 msgid "Month"
@@ -124,6 +155,10 @@ msgctxt "model:babi.expression,name:stock_move_product_source_location"
 msgid "Source Location"
 msgstr "Ubicación origen"
 
+msgctxt "model:babi.expression,name:stock_move_quantity"
+msgid "Quantity (no UoM conversion)"
+msgstr "Cantidad (sin conversión de UdM)"
+
 msgctxt "model:babi.expression,name:stock_move_self"
 msgid "Move"
 msgstr "Movimiento"
@@ -131,6 +166,14 @@ msgstr "Movimiento"
 msgctxt "model:babi.expression,name:stock_move_state"
 msgid "State"
 msgstr "Estado"
+
+msgctxt "model:babi.expression,name:stock_move_unit_price"
+msgid "Unit Price"
+msgstr "Precio unitario"
+
+msgctxt "model:babi.expression,name:stock_move_warehouse"
+msgid "Warehouse"
+msgstr "Almacén"
 
 msgctxt "model:babi.expression,name:stock_move_week"
 msgid "Week"
@@ -168,8 +211,7 @@ msgctxt "model:babi.measure,name:product_category_product_quantities__cost"
 msgid "Cost"
 msgstr "Coste"
 
-msgctxt ""
-"model:babi.measure,name:product_category_product_quantities__quantity"
+msgctxt "model:babi.measure,name:product_category_product_quantities__quantity"
 msgid "Real Quantity"
 msgstr "Cantidad real"
 
