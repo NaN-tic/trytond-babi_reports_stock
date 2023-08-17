@@ -219,13 +219,13 @@
         <record model="babi.expression" id="stock_move_cost_amount">
             <field name="ttype">float</field>
             <field name="model" search="[('model','=','stock.move')]"/>
-            <field name="expression">o.cost_price * o.internal_quantity</field>
+            <field name="expression">float(o.cost_price or 0.0) * o.internal_quantity</field>
             <field name="name">Cost Amount</field>
         </record>
         <record model="babi.expression" id="stock_move_amount">
             <field name="ttype">float</field>
             <field name="model" search="[('model','=','stock.move')]"/>
-            <field name="expression">o.unit_price * o.internal_quantity</field>
+            <field name="expression">float(o.unit_price or 0.0) * o.internal_quantity</field>
             <field name="name">Amount</field>
         </record>
         <record model="babi.expression" id="stock_move_currency">
