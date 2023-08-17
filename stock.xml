@@ -192,6 +192,54 @@
             <field name="expression">o.state</field>
             <field name="name">State</field>
         </record>
+        <record model="babi.expression" id="stock_move_internal_quantity">
+            <field name="ttype">float</field>
+            <field name="model" search="[('model','=','stock.move')]"/>
+            <field name="expression">o.internal_quantity</field>
+            <field name="name">Internal Quantity</field>
+        </record>
+        <record model="babi.expression" id="stock_move_quantity">
+            <field name="ttype">float</field>
+            <field name="model" search="[('model','=','stock.move')]"/>
+            <field name="expression">o.quantity</field>
+            <field name="name">Quantity (no UoM conversion)</field>
+        </record>
+        <record model="babi.expression" id="stock_move_cost_price">
+            <field name="ttype">float</field>
+            <field name="model" search="[('model','=','stock.move')]"/>
+            <field name="expression">o.cost_price</field>
+            <field name="name">Cost Price</field>
+        </record>
+        <record model="babi.expression" id="stock_move_unit_price">
+            <field name="ttype">float</field>
+            <field name="model" search="[('model','=','stock.move')]"/>
+            <field name="expression">o.unit_price</field>
+            <field name="name">Unit Price</field>
+        </record>
+        <record model="babi.expression" id="stock_move_cost_amount">
+            <field name="ttype">float</field>
+            <field name="model" search="[('model','=','stock.move')]"/>
+            <field name="expression">o.cost_price * o.internal_quantity</field>
+            <field name="name">Cost Amount</field>
+        </record>
+        <record model="babi.expression" id="stock_move_amount">
+            <field name="ttype">float</field>
+            <field name="model" search="[('model','=','stock.move')]"/>
+            <field name="expression">o.unit_price * o.internal_quantity</field>
+            <field name="name">Amount</field>
+        </record>
+        <record model="babi.expression" id="stock_move_currency">
+            <field name="ttype">char</field>
+            <field name="model" search="[('model','=','stock.move')]"/>
+            <field name="expression">o.currency and o.currency.rec_name or None</field>
+            <field name="name">Currency</field>
+        </record>
+        <record model="babi.expression" id="stock_move_warehouse">
+            <field name="ttype">char</field>
+            <field name="model" search="[('model','=','stock.move')]"/>
+            <field name="expression">o.shipment and o.shipment.warehouse.rec_name or None</field>
+            <field name="name">Warehouse</field>
+        </record>
 
         <!-- Reports -->
         <!-- Category - Product | Quantity, Stock Cost-->
