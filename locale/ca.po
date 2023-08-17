@@ -8,7 +8,7 @@ msgstr "Categoria"
 
 msgctxt "model:babi.dimension,name:product_category_product__product"
 msgid "Product"
-msgstr "Productes"
+msgstr "Producte"
 
 msgctxt ""
 "model:babi.dimension,name:product_category_product_quantities__category"
@@ -18,11 +18,11 @@ msgstr "Categoria"
 msgctxt ""
 "model:babi.dimension,name:product_category_product_quantities__product"
 msgid "Product"
-msgstr "Productes"
+msgstr "Producte"
 
 msgctxt "model:babi.dimension,name:product_product_quantities__product"
 msgid "Product"
-msgstr "Productes"
+msgstr "Producte"
 
 msgctxt "model:babi.dimension,name:stock_move_year_month_delay__month"
 msgid "Month"
@@ -98,7 +98,7 @@ msgstr "Any-mes estimat"
 
 msgctxt "model:babi.expression,name:stock_move_product"
 msgid "Product"
-msgstr "Productes"
+msgstr "Producte"
 
 msgctxt "model:babi.expression,name:stock_move_product_category"
 msgid "Product Category"
