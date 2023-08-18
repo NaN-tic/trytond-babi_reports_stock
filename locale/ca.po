@@ -253,4 +253,4 @@ msgstr "Producte: Quantitats"
 
 msgctxt "model:babi.report,name:stock_move_year_month_delay"
 msgid "Year - Month delays"
-msgstr "Desviamnets Any - Mes "
+msgstr "Desviaments Any - Mes "
