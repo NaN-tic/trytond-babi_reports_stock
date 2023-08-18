@@ -207,13 +207,13 @@
         <record model="babi.expression" id="stock_move_internal_quantity_signed">
             <field name="ttype">float</field>
             <field name="model" search="[('model','=','stock.move')]"/>
-            <field name="expression">(o.to_location.type = 'internal' and o.to_location.type != 'internal' and -o.internal_quantity) or (o.from_location.type = 'internal' and o.to_location.type != 'internal' and o.internal_quantity) or 0.0</field>
+            <field name="expression">(o.to_location.type == 'storage' and o.from_location.type != 'storage' and o.internal_quantity) or (o.from_location.type == 'storage' and o.to_location.type != 'storage' and -o.internal_quantity) or 0.0</field>
             <field name="name">Internal Quantity (signed)</field>
         </record>
         <record model="babi.expression" id="stock_move_internal_quantity_signed_inverted">
             <field name="ttype">float</field>
             <field name="model" search="[('model','=','stock.move')]"/>
-            <field name="expression">(o.to_location.type = 'internal' and o.to_location.type != 'internal' and o.internal_quantity) or (o.from_location.type = 'internal' and o.to_location.type != 'internal' and -o.internal_quantity) or 0.0</field>
+            <field name="expression">(o.to_location.type == 'storage' and o.from_location.type != 'storage' and -o.internal_quantity) or (o.from_location.type == 'storage' and o.to_location.type != 'storage' and o.internal_quantity) or 0.0</field>
             <field name="name">Internal Quantity (signed - inverted)</field>
         </record>
         <record model="babi.expression" id="stock_move_cost_price">
