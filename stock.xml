@@ -158,7 +158,7 @@
         <record model="babi.expression" id="stock_move_product_category">
             <field name="ttype">many2one</field>
             <field name="model" search="[('model','=','stock.move')]"/>
-            <field name="expression">o.product and o.product.account_category.id</field>
+            <field name="expression">o.product and o.product.account_category and o.product.account_category.id</field>
             <field name="name">Product Category</field>
             <field name="related_model" search="[('model','=','product.category')]"/>
         </record>
@@ -177,7 +177,7 @@
         <record model="babi.expression" id="stock_move_product_lot_name">
             <field name="ttype">char</field>
             <field name="model" search="[('model','=','stock.move')]"/>
-            <field name="expression">o.lot and o.lot.rec_name</field>
+            <field name="expression">hasattr(o, 'lot') and o.lot and o.lot.rec_name</field>
             <field name="name">Lot</field>
         </record>
         <record model="babi.expression" id="stock_move_picking_name">
