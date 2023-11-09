@@ -52,12 +52,6 @@
             <field name="expression">o.id</field>
             <field name="name">ID</field>
         </record>
-        <record model="babi.expression" id="stock_move_name">
-            <field name="ttype">char</field>
-            <field name="model" search="[('model','=','stock.move')]"/>
-            <field name="expression">o.name</field>
-            <field name="name">Description</field>
-        </record>
         <record model="babi.expression" id="stock_move_year">
             <field name="ttype">char</field>
             <field name="model" search="[('model','=','stock.move')]"/>
