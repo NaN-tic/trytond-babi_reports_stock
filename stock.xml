@@ -243,7 +243,7 @@
         <record model="babi.expression" id="stock_move_warehouse">
             <field name="ttype">char</field>
             <field name="model" search="[('model','=','stock.move')]"/>
-            <field name="expression">o.shipment and hasattr(o.shipment, 'warehouse') and o.shipment.warehouse.rec_name</field>
+            <field name="expression">o.shipment and hasattr(o.shipment, 'warehouse') and o.shipment.warehouse and o.shipment.warehouse.rec_name</field>
             <field name="name">Warehouse</field>
         </record>
         <record model="babi.expression" id="stock_move_shipment">
