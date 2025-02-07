@@ -6,249 +6,249 @@
         <!-- Filters-->
         <record model="babi.filter" id="valid_stock_moves">
             <field name="name">Non-draft</field>
-            <field name="model" search="[('model', '=', 'stock.move')]"/>
+            <field name="model" search="[('name', '=', 'stock.move')]"/>
             <field name="domain">[('state', '!=', 'draft')]</field>
         </record>
         <record model="babi.filter" id="done_stock_moves">
             <field name="name">Done</field>
-            <field name="model" search="[('model', '=', 'stock.move')]"/>
+            <field name="model" search="[('name', '=', 'stock.move')]"/>
             <field name="domain">[('state', '=', 'done')]</field>
         </record>
         <record model="babi.filter" id="assigned_stock_moves">
             <field name="name">Assigned</field>
-            <field name="model" search="[('model', '=', 'stock.move')]"/>
+            <field name="model" search="[('name', '=', 'stock.move')]"/>
             <field name="domain">[('state', '=', 'assigned')]</field>
         </record>
 
         <!-- Expressions-->
         <record model="babi.expression" id="product_virtual_quantity">
             <field name="ttype">float</field>
-            <field name="model" search="[('model','=','product.product')]"/>
+            <field name="model" search="[('name','=','product.product')]"/>
             <field name="expression">o.forecast_quantity</field>
             <field name="name">Forecast Quantity</field>
         </record>
         <record model="babi.expression" id="product_real_quantity">
             <field name="ttype">float</field>
-            <field name="model" search="[('model','=','product.product')]"/>
+            <field name="model" search="[('name','=','product.product')]"/>
             <field name="expression">o.quantity</field>
             <field name="name">Real Quantity</field>
         </record>
         <record model="babi.expression" id="product_stock_cost">
             <field name="ttype">float</field>
-            <field name="model" search="[('model','=','product.product')]"/>
+            <field name="model" search="[('name','=','product.product')]"/>
             <field name="expression">o.cost_value</field>
             <field name="name">Cost Value</field>
         </record>
         <record model="babi.expression" id="stock_move_self">
             <field name="ttype">many2one</field>
-            <field name="model" search="[('model','=','stock.move')]"/>
+            <field name="model" search="[('name','=','stock.move')]"/>
             <field name="expression">o.id</field>
             <field name="name">Move</field>
-            <field name="related_model" search="[('model','=','stock.move')]"/>
+            <field name="related_model" search="[('name','=','stock.move')]"/>
         </record>
         <record model="babi.expression" id="stock_move">
             <field name="ttype">integer</field>
-            <field name="model" search="[('model','=','stock.move')]"/>
+            <field name="model" search="[('name','=','stock.move')]"/>
             <field name="expression">o.id</field>
             <field name="name">ID</field>
         </record>
         <record model="babi.expression" id="stock_move_year">
             <field name="ttype">char</field>
-            <field name="model" search="[('model','=','stock.move')]"/>
+            <field name="model" search="[('name','=','stock.move')]"/>
             <field name="expression">y(o.effective_date)</field>
             <field name="name">Year</field>
         </record>
         <record model="babi.expression" id="stock_move_month">
             <field name="ttype">char</field>
-            <field name="model" search="[('model','=','stock.move')]"/>
+            <field name="model" search="[('name','=','stock.move')]"/>
             <field name="expression">m(o.effective_date)</field>
             <field name="name">Month</field>
         </record>
         <record model="babi.expression" id="stock_move_day">
             <field name="ttype">char</field>
-            <field name="model" search="[('model','=','stock.move')]"/>
+            <field name="model" search="[('name','=','stock.move')]"/>
             <field name="expression">d(o.effective_date)</field>
             <field name="name">Day</field>
         </record>
         <record model="babi.expression" id="stock_move_week">
             <field name="ttype">char</field>
-            <field name="model" search="[('model','=','stock.move')]"/>
+            <field name="model" search="[('name','=','stock.move')]"/>
             <field name="expression">w(o.effective_date)</field>
             <field name="name">Week</field>
         </record>
         <record model="babi.expression" id="stock_move_year_month">
             <field name="ttype">char</field>
-            <field name="model" search="[('model','=','stock.move')]"/>
+            <field name="model" search="[('name','=','stock.move')]"/>
             <field name="expression">ym(o.effective_date)</field>
             <field name="name">Year-Month</field>
         </record>
         <record model="babi.expression" id="stock_move_date">
             <field name="ttype">char</field>
-            <field name="model" search="[('model','=','stock.move')]"/>
+            <field name="model" search="[('name','=','stock.move')]"/>
             <field name="expression">ymd(o.effective_date)</field>
             <field name="name">Date</field>
         </record>
         <record model="babi.expression" id="stock_move_planned_year">
             <field name="ttype">char</field>
-            <field name="model" search="[('model','=','stock.move')]"/>
+            <field name="model" search="[('name','=','stock.move')]"/>
             <field name="expression">y(o.planned_date)</field>
             <field name="name">Planned Year</field>
         </record>
         <record model="babi.expression" id="stock_move_planned_month">
             <field name="ttype">char</field>
-            <field name="model" search="[('model','=','stock.move')]"/>
+            <field name="model" search="[('name','=','stock.move')]"/>
             <field name="expression">m(o.planned_date)</field>
             <field name="name">Planned Month</field>
         </record>
         <record model="babi.expression" id="stock_move_planned_day">
             <field name="ttype">char</field>
-            <field name="model" search="[('model','=','stock.move')]"/>
+            <field name="model" search="[('name','=','stock.move')]"/>
             <field name="expression">d(o.planned_date)</field>
             <field name="name">Planned Day</field>
         </record>
         <record model="babi.expression" id="stock_move_planned_week">
             <field name="ttype">char</field>
-            <field name="model" search="[('model','=','stock.move')]"/>
+            <field name="model" search="[('name','=','stock.move')]"/>
             <field name="expression">w(o.planned_date)</field>
             <field name="name">Planned Week</field>
         </record>
         <record model="babi.expression" id="stock_move_planned_year_month">
             <field name="ttype">char</field>
-            <field name="model" search="[('model','=','stock.move')]"/>
+            <field name="model" search="[('name','=','stock.move')]"/>
             <field name="expression">ym(o.planned_date)</field>
             <field name="name">Planned Year-Month</field>
         </record>
         <record model="babi.expression" id="stock_move_planned_date">
             <field name="ttype">char</field>
-            <field name="model" search="[('model','=','stock.move')]"/>
+            <field name="model" search="[('name','=','stock.move')]"/>
             <field name="expression">ymd(o.planned_date)</field>
             <field name="name">Planned Date</field>
         </record>
         <record model="babi.expression" id="stock_move_delay">
             <field name="ttype">float</field>
-            <field name="model" search="[('model','=','stock.move')]"/>
+            <field name="model" search="[('name','=','stock.move')]"/>
             <field name="expression">(date(o.effective_date) - date(o.planned_date)).days if o.planned_date and o.effective_date else 0</field>
             <field name="name">Delay (in days)</field>
         </record>
         <record model="babi.expression" id="stock_move_product">
             <field name="ttype">many2one</field>
-            <field name="model" search="[('model','=','stock.move')]"/>
+            <field name="model" search="[('name','=','stock.move')]"/>
             <field name="expression">o.product and o.product.id</field>
             <field name="name">Product</field>
-            <field name="related_model" search="[('model', '=', 'product.product')]"/>
+            <field name="related_model" search="[('name', '=', 'product.product')]"/>
         </record>
         <record model="babi.expression" id="stock_move_product_code">
             <field name="ttype">char</field>
-            <field name="model" search="[('model','=','stock.move')]"/>
+            <field name="model" search="[('name','=','stock.move')]"/>
             <field name="expression">o.product and o.product.code</field>
             <field name="name">Product Code</field>
         </record>
         <record model="babi.expression" id="stock_move_product_name">
             <field name="ttype">char</field>
-            <field name="model" search="[('model','=','stock.move')]"/>
+            <field name="model" search="[('name','=','stock.move')]"/>
             <field name="expression">o.product and o.product.name</field>
             <field name="name">Product Name</field>
         </record>
         <record model="babi.expression" id="stock_move_product_category">
             <field name="ttype">many2one</field>
-            <field name="model" search="[('model','=','stock.move')]"/>
+            <field name="model" search="[('name','=','stock.move')]"/>
             <field name="expression">o.product and o.product.account_category and o.product.account_category.id</field>
             <field name="name">Product Category</field>
-            <field name="related_model" search="[('model','=','product.category')]"/>
+            <field name="related_model" search="[('name','=','product.category')]"/>
         </record>
         <record model="babi.expression" id="stock_move_product_source_location">
             <field name="ttype">char</field>
-            <field name="model" search="[('model','=','stock.move')]"/>
+            <field name="model" search="[('name','=','stock.move')]"/>
             <field name="expression">o.from_location.rec_name</field>
             <field name="name">Source Location</field>
         </record>
         <record model="babi.expression" id="stock_move_product_destination_location">
             <field name="ttype">char</field>
-            <field name="model" search="[('model','=','stock.move')]"/>
+            <field name="model" search="[('name','=','stock.move')]"/>
             <field name="expression">o.to_location.rec_name</field>
             <field name="name">Destination Location</field>
         </record>
         <record model="babi.expression" id="stock_move_product_lot_name">
             <field name="ttype">char</field>
-            <field name="model" search="[('model','=','stock.move')]"/>
+            <field name="model" search="[('name','=','stock.move')]"/>
             <field name="expression">hasattr(o, 'lot') and o.lot and o.lot.rec_name</field>
             <field name="name">Lot</field>
         </record>
         <record model="babi.expression" id="stock_move_picking_name">
             <field name="ttype">char</field>
-            <field name="model" search="[('model','=','stock.move')]"/>
+            <field name="model" search="[('name','=','stock.move')]"/>
             <field name="expression">o.shipment and o.shipment.rec_name</field>
             <field name="name">Shipment</field>
         </record>
         <record model="babi.expression" id="stock_move_state">
             <field name="ttype">char</field>
-            <field name="model" search="[('model','=','stock.move')]"/>
+            <field name="model" search="[('name','=','stock.move')]"/>
             <field name="expression">o.state</field>
             <field name="name">State</field>
         </record>
         <record model="babi.expression" id="stock_move_internal_quantity">
             <field name="ttype">float</field>
-            <field name="model" search="[('model','=','stock.move')]"/>
+            <field name="model" search="[('name','=','stock.move')]"/>
             <field name="expression">o.internal_quantity</field>
             <field name="name">Internal Quantity</field>
         </record>
         <record model="babi.expression" id="stock_move_quantity">
             <field name="ttype">float</field>
-            <field name="model" search="[('model','=','stock.move')]"/>
+            <field name="model" search="[('name','=','stock.move')]"/>
             <field name="expression">o.quantity</field>
             <field name="name">Quantity (no UoM conversion)</field>
         </record>
         <record model="babi.expression" id="stock_move_internal_quantity_signed">
             <field name="ttype">float</field>
-            <field name="model" search="[('model','=','stock.move')]"/>
+            <field name="model" search="[('name','=','stock.move')]"/>
             <field name="expression">(o.to_location.type == 'storage' and o.from_location.type != 'storage' and o.internal_quantity) or (o.from_location.type == 'storage' and o.to_location.type != 'storage' and -o.internal_quantity) or 0.0</field>
             <field name="name">Internal Quantity (signed)</field>
         </record>
         <record model="babi.expression" id="stock_move_internal_quantity_signed_inverted">
             <field name="ttype">float</field>
-            <field name="model" search="[('model','=','stock.move')]"/>
+            <field name="model" search="[('name','=','stock.move')]"/>
             <field name="expression">(o.to_location.type == 'storage' and o.from_location.type != 'storage' and -o.internal_quantity) or (o.from_location.type == 'storage' and o.to_location.type != 'storage' and o.internal_quantity) or 0.0</field>
             <field name="name">Internal Quantity (signed - inverted)</field>
         </record>
         <record model="babi.expression" id="stock_move_cost_price">
             <field name="ttype">float</field>
-            <field name="model" search="[('model','=','stock.move')]"/>
+            <field name="model" search="[('name','=','stock.move')]"/>
             <field name="expression">o.cost_price</field>
             <field name="name">Cost Price</field>
         </record>
         <record model="babi.expression" id="stock_move_unit_price">
             <field name="ttype">float</field>
-            <field name="model" search="[('model','=','stock.move')]"/>
+            <field name="model" search="[('name','=','stock.move')]"/>
             <field name="expression">o.unit_price</field>
             <field name="name">Unit Price</field>
         </record>
         <record model="babi.expression" id="stock_move_cost_amount">
             <field name="ttype">float</field>
-            <field name="model" search="[('model','=','stock.move')]"/>
+            <field name="model" search="[('name','=','stock.move')]"/>
             <field name="expression">float(o.cost_price or 0.0) * o.internal_quantity</field>
             <field name="name">Cost Amount</field>
         </record>
         <record model="babi.expression" id="stock_move_amount">
             <field name="ttype">float</field>
-            <field name="model" search="[('model','=','stock.move')]"/>
+            <field name="model" search="[('name','=','stock.move')]"/>
             <field name="expression">float(o.unit_price or 0.0) * o.internal_quantity</field>
             <field name="name">Amount</field>
         </record>
         <record model="babi.expression" id="stock_move_currency">
             <field name="ttype">char</field>
-            <field name="model" search="[('model','=','stock.move')]"/>
+            <field name="model" search="[('name','=','stock.move')]"/>
             <field name="expression">o.currency and o.currency.rec_name</field>
             <field name="name">Currency</field>
         </record>
         <record model="babi.expression" id="stock_move_warehouse">
             <field name="ttype">char</field>
-            <field name="model" search="[('model','=','stock.move')]"/>
+            <field name="model" search="[('name','=','stock.move')]"/>
             <field name="expression">o.shipment and hasattr(o.shipment, 'warehouse') and o.shipment.warehouse and o.shipment.warehouse.rec_name</field>
             <field name="name">Warehouse</field>
         </record>
         <record model="babi.expression" id="stock_move_shipment">
             <field name="ttype">char</field>
-            <field name="model" search="[('model','=','stock.move')]"/>
+            <field name="model" search="[('name','=','stock.move')]"/>
             <field name="expression">o.shipment and o.shipment.rec_name</field>
             <field name="name">Shipment</field>
         </record>
