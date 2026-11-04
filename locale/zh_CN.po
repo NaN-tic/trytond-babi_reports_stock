@@ -1,0 +1,260 @@
+#
+msgid ""
+msgstr ""
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgctxt "model:babi.dimension,name:product_category_product__category"
+msgid "Category"
+msgstr "类别"
+
+msgctxt "model:babi.dimension,name:product_category_product__product"
+msgid "Product"
+msgstr "产品"
+
+msgctxt ""
+"model:babi.dimension,name:product_category_product_quantities__category"
+msgid "Category"
+msgstr "类别"
+
+msgctxt ""
+"model:babi.dimension,name:product_category_product_quantities__product"
+msgid "Product"
+msgstr "产品"
+
+msgctxt "model:babi.dimension,name:product_product_quantities__product"
+msgid "Product"
+msgstr "产品"
+
+msgctxt "model:babi.dimension,name:stock_move_year_month_delay__month"
+msgid "Month"
+msgstr "月"
+
+msgctxt "model:babi.dimension,name:stock_move_year_month_delay__year"
+msgid "Year"
+msgstr "年"
+
+msgctxt "model:babi.expression,name:product_real_quantity"
+msgid "Real Quantity"
+msgstr "实际数量"
+
+msgctxt "model:babi.expression,name:product_stock_cost"
+msgid "Cost Value"
+msgstr "成本取值"
+
+msgctxt "model:babi.expression,name:product_virtual_quantity"
+msgid "Forecast Quantity"
+msgstr "预测数量"
+
+msgctxt "model:babi.expression,name:stock_move"
+msgid "ID"
+msgstr "ID"
+
+msgctxt "model:babi.expression,name:stock_move_amount"
+msgid "Amount"
+msgstr "数额"
+
+msgctxt "model:babi.expression,name:stock_move_cost_amount"
+msgid "Cost Amount"
+msgstr "成本金额"
+
+msgctxt "model:babi.expression,name:stock_move_cost_price"
+msgid "Cost Price"
+msgstr "成本价"
+
+msgctxt "model:babi.expression,name:stock_move_currency"
+msgid "Currency"
+msgstr "货币"
+
+msgctxt "model:babi.expression,name:stock_move_date"
+msgid "Date"
+msgstr "日期"
+
+msgctxt "model:babi.expression,name:stock_move_day"
+msgid "Day"
+msgstr "天"
+
+msgctxt "model:babi.expression,name:stock_move_delay"
+msgid "Delay (in days)"
+msgstr "延迟（天）"
+
+msgctxt "model:babi.expression,name:stock_move_internal_quantity"
+msgid "Internal Quantity"
+msgstr "内部数量"
+
+msgctxt "model:babi.expression,name:stock_move_month"
+msgid "Month"
+msgstr "月"
+
+msgctxt "model:babi.expression,name:stock_move_name"
+msgid "Description"
+msgstr "描述"
+
+msgctxt "model:babi.expression,name:stock_move_picking_name"
+msgid "Shipment"
+msgstr "收发货"
+
+msgctxt "model:babi.expression,name:stock_move_planned_date"
+msgid "Planned Date"
+msgstr "计划日期"
+
+msgctxt "model:babi.expression,name:stock_move_planned_day"
+msgid "Planned Day"
+msgstr "计划日"
+
+msgctxt "model:babi.expression,name:stock_move_planned_month"
+msgid "Planned Month"
+msgstr "计划月"
+
+msgctxt "model:babi.expression,name:stock_move_planned_week"
+msgid "Planned Week"
+msgstr "计划周"
+
+msgctxt "model:babi.expression,name:stock_move_planned_year"
+msgid "Planned Year"
+msgstr "计划年"
+
+msgctxt "model:babi.expression,name:stock_move_planned_year_month"
+msgid "Planned Year-Month"
+msgstr "计划年月"
+
+msgctxt "model:babi.expression,name:stock_move_product"
+msgid "Product"
+msgstr "产品"
+
+msgctxt "model:babi.expression,name:stock_move_product_category"
+msgid "Product Category"
+msgstr "产品类别"
+
+msgctxt "model:babi.expression,name:stock_move_product_code"
+msgid "Product Code"
+msgstr "产品代码"
+
+msgctxt "model:babi.expression,name:stock_move_product_destination_location"
+msgid "Destination Location"
+msgstr "目标库位"
+
+msgctxt "model:babi.expression,name:stock_move_product_lot_name"
+msgid "Lot"
+msgstr "批次"
+
+msgctxt "model:babi.expression,name:stock_move_product_name"
+msgid "Product Name"
+msgstr "产品名称"
+
+msgctxt "model:babi.expression,name:stock_move_product_source_location"
+msgid "Source Location"
+msgstr "来源库位"
+
+msgctxt "model:babi.expression,name:stock_move_quantity"
+msgid "Quantity (no UoM conversion)"
+msgstr "数量（不转换计量单位）"
+
+msgctxt "model:babi.expression,name:stock_move_self"
+msgid "Move"
+msgstr "记账凭证"
+
+msgctxt "model:babi.expression,name:stock_move_shipment"
+msgid "Shipment"
+msgstr "收发货"
+
+msgctxt "model:babi.expression,name:stock_move_state"
+msgid "State"
+msgstr "状态"
+
+msgctxt "model:babi.expression,name:stock_move_unit_price"
+msgid "Unit Price"
+msgstr "单价"
+
+msgctxt "model:babi.expression,name:stock_move_warehouse"
+msgid "Warehouse"
+msgstr "仓库"
+
+msgctxt "model:babi.expression,name:stock_move_week"
+msgid "Week"
+msgstr "周"
+
+msgctxt "model:babi.expression,name:stock_move_year"
+msgid "Year"
+msgstr "年"
+
+msgctxt "model:babi.expression,name:stock_move_year_month"
+msgid "Year-Month"
+msgstr "年月"
+
+msgctxt "model:babi.filter,name:assigned_stock_moves"
+msgid "Assigned"
+msgstr "已选货"
+
+msgctxt "model:babi.filter,name:done_stock_moves"
+msgid "Done"
+msgstr "完成"
+
+msgctxt "model:babi.filter,name:valid_stock_moves"
+msgid "Non-draft"
+msgstr "非草稿"
+
+msgctxt "model:babi.measure,name:product_category_product__cost"
+msgid "Cost"
+msgstr "成本"
+
+msgctxt "model:babi.measure,name:product_category_product__quantity"
+msgid "Quantity"
+msgstr "数量"
+
+msgctxt "model:babi.measure,name:product_category_product_quantities__cost"
+msgid "Cost"
+msgstr "成本"
+
+msgctxt ""
+"model:babi.measure,name:product_category_product_quantities__quantity"
+msgid "Real Quantity"
+msgstr "实际数量"
+
+msgctxt "model:babi.measure,name:product_category_product_quantities__virtual"
+msgid "Forecast Quantity"
+msgstr "预测数量"
+
+msgctxt "model:babi.measure,name:product_product_quantities__cost"
+msgid "Cost"
+msgstr "成本"
+
+msgctxt "model:babi.measure,name:product_product_quantities__quantity"
+msgid "Real Quantity"
+msgstr "实际数量"
+
+msgctxt "model:babi.measure,name:product_product_quantities__virtual"
+msgid "Forecast Quantity"
+msgstr "预测数量"
+
+msgctxt "model:babi.measure,name:stock_move_year_month_delay__delay"
+msgid "Delay"
+msgstr "延迟"
+
+msgctxt "model:babi.report,name:product_category_product"
+msgid "Category - Product"
+msgstr "类别 - 产品"
+
+msgctxt "model:babi.report,name:product_category_product_quantities"
+msgid "Category - Product: Quantities"
+msgstr "类别 - 产品：数量"
+
+msgctxt "model:babi.report,name:product_product_quantities"
+msgid "Product: Quantities"
+msgstr "产品：数量"
+
+msgctxt "model:babi.report,name:stock_move_year_month_delay"
+msgid "Year - Month delays"
+msgstr "年 - 月延迟"
+
+msgctxt "model:babi.expression,name:stock_move_internal_quantity_signed"
+msgid "Internal Quantity (signed)"
+msgstr "内部数量（带符号）"
+
+msgctxt ""
+"model:babi.expression,name:stock_move_internal_quantity_signed_inverted"
+msgid "Internal Quantity (signed - inverted)"
+msgstr "内部数量（带符号 - 取反）"
