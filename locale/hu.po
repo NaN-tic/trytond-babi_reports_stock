@@ -1,0 +1,260 @@
+#
+msgid ""
+msgstr ""
+"Language: hu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgctxt "model:babi.dimension,name:product_category_product__category"
+msgid "Category"
+msgstr "Kategória"
+
+msgctxt "model:babi.dimension,name:product_category_product__product"
+msgid "Product"
+msgstr "Termék"
+
+msgctxt ""
+"model:babi.dimension,name:product_category_product_quantities__category"
+msgid "Category"
+msgstr "Kategória"
+
+msgctxt ""
+"model:babi.dimension,name:product_category_product_quantities__product"
+msgid "Product"
+msgstr "Termék"
+
+msgctxt "model:babi.dimension,name:product_product_quantities__product"
+msgid "Product"
+msgstr "Termék"
+
+msgctxt "model:babi.dimension,name:stock_move_year_month_delay__month"
+msgid "Month"
+msgstr "Hónap"
+
+msgctxt "model:babi.dimension,name:stock_move_year_month_delay__year"
+msgid "Year"
+msgstr "Év"
+
+msgctxt "model:babi.expression,name:product_real_quantity"
+msgid "Real Quantity"
+msgstr "Tényleges mennyiség"
+
+msgctxt "model:babi.expression,name:product_stock_cost"
+msgid "Cost Value"
+msgstr "Áru bekerülési értéke"
+
+msgctxt "model:babi.expression,name:product_virtual_quantity"
+msgid "Forecast Quantity"
+msgstr "Előrejelzett mennyiség"
+
+msgctxt "model:babi.expression,name:stock_move"
+msgid "ID"
+msgstr "Azonosító"
+
+msgctxt "model:babi.expression,name:stock_move_amount"
+msgid "Amount"
+msgstr "Összeg"
+
+msgctxt "model:babi.expression,name:stock_move_cost_amount"
+msgid "Cost Amount"
+msgstr "Költségösszeg"
+
+msgctxt "model:babi.expression,name:stock_move_cost_price"
+msgid "Cost Price"
+msgstr "Költségár"
+
+msgctxt "model:babi.expression,name:stock_move_currency"
+msgid "Currency"
+msgstr "Pénznem"
+
+msgctxt "model:babi.expression,name:stock_move_date"
+msgid "Date"
+msgstr "Dátum"
+
+msgctxt "model:babi.expression,name:stock_move_day"
+msgid "Day"
+msgstr "Nap"
+
+msgctxt "model:babi.expression,name:stock_move_delay"
+msgid "Delay (in days)"
+msgstr "Késés (napokban)"
+
+msgctxt "model:babi.expression,name:stock_move_internal_quantity"
+msgid "Internal Quantity"
+msgstr "Belső mennyiség"
+
+msgctxt "model:babi.expression,name:stock_move_month"
+msgid "Month"
+msgstr "Hónap"
+
+msgctxt "model:babi.expression,name:stock_move_name"
+msgid "Description"
+msgstr "Leírás"
+
+msgctxt "model:babi.expression,name:stock_move_picking_name"
+msgid "Shipment"
+msgstr "Szállítmány"
+
+msgctxt "model:babi.expression,name:stock_move_planned_date"
+msgid "Planned Date"
+msgstr "Tervezett dátum"
+
+msgctxt "model:babi.expression,name:stock_move_planned_day"
+msgid "Planned Day"
+msgstr "Tervezett nap"
+
+msgctxt "model:babi.expression,name:stock_move_planned_month"
+msgid "Planned Month"
+msgstr "Tervezett hónap"
+
+msgctxt "model:babi.expression,name:stock_move_planned_week"
+msgid "Planned Week"
+msgstr "Tervezett hét"
+
+msgctxt "model:babi.expression,name:stock_move_planned_year"
+msgid "Planned Year"
+msgstr "Tervezett év"
+
+msgctxt "model:babi.expression,name:stock_move_planned_year_month"
+msgid "Planned Year-Month"
+msgstr "Tervezett év-hónap"
+
+msgctxt "model:babi.expression,name:stock_move_product"
+msgid "Product"
+msgstr "Termék"
+
+msgctxt "model:babi.expression,name:stock_move_product_category"
+msgid "Product Category"
+msgstr "Termék kategória"
+
+msgctxt "model:babi.expression,name:stock_move_product_code"
+msgid "Product Code"
+msgstr "Termékkód"
+
+msgctxt "model:babi.expression,name:stock_move_product_destination_location"
+msgid "Destination Location"
+msgstr "Cél tárolóhely"
+
+msgctxt "model:babi.expression,name:stock_move_product_lot_name"
+msgid "Lot"
+msgstr "Gyártási tétel"
+
+msgctxt "model:babi.expression,name:stock_move_product_name"
+msgid "Product Name"
+msgstr "Terméknév"
+
+msgctxt "model:babi.expression,name:stock_move_product_source_location"
+msgid "Source Location"
+msgstr "Forrás tárolóhely"
+
+msgctxt "model:babi.expression,name:stock_move_quantity"
+msgid "Quantity (no UoM conversion)"
+msgstr "Mennyiség (mértékegység-átváltás nélkül)"
+
+msgctxt "model:babi.expression,name:stock_move_self"
+msgid "Move"
+msgstr "Bizonylat"
+
+msgctxt "model:babi.expression,name:stock_move_shipment"
+msgid "Shipment"
+msgstr "Szállítmány"
+
+msgctxt "model:babi.expression,name:stock_move_state"
+msgid "State"
+msgstr "Állapot"
+
+msgctxt "model:babi.expression,name:stock_move_unit_price"
+msgid "Unit Price"
+msgstr "Egységár"
+
+msgctxt "model:babi.expression,name:stock_move_warehouse"
+msgid "Warehouse"
+msgstr "Raktár"
+
+msgctxt "model:babi.expression,name:stock_move_week"
+msgid "Week"
+msgstr "Hét"
+
+msgctxt "model:babi.expression,name:stock_move_year"
+msgid "Year"
+msgstr "Év"
+
+msgctxt "model:babi.expression,name:stock_move_year_month"
+msgid "Year-Month"
+msgstr "Év-hónap"
+
+msgctxt "model:babi.filter,name:assigned_stock_moves"
+msgid "Assigned"
+msgstr "Lefoglalva"
+
+msgctxt "model:babi.filter,name:done_stock_moves"
+msgid "Done"
+msgstr "Kész"
+
+msgctxt "model:babi.filter,name:valid_stock_moves"
+msgid "Non-draft"
+msgstr "Nem tervezett állapotú"
+
+msgctxt "model:babi.measure,name:product_category_product__cost"
+msgid "Cost"
+msgstr "Költség"
+
+msgctxt "model:babi.measure,name:product_category_product__quantity"
+msgid "Quantity"
+msgstr "Mennyiség"
+
+msgctxt "model:babi.measure,name:product_category_product_quantities__cost"
+msgid "Cost"
+msgstr "Költség"
+
+msgctxt ""
+"model:babi.measure,name:product_category_product_quantities__quantity"
+msgid "Real Quantity"
+msgstr "Tényleges mennyiség"
+
+msgctxt "model:babi.measure,name:product_category_product_quantities__virtual"
+msgid "Forecast Quantity"
+msgstr "Előrejelzett mennyiség"
+
+msgctxt "model:babi.measure,name:product_product_quantities__cost"
+msgid "Cost"
+msgstr "Költség"
+
+msgctxt "model:babi.measure,name:product_product_quantities__quantity"
+msgid "Real Quantity"
+msgstr "Tényleges mennyiség"
+
+msgctxt "model:babi.measure,name:product_product_quantities__virtual"
+msgid "Forecast Quantity"
+msgstr "Előrejelzett mennyiség"
+
+msgctxt "model:babi.measure,name:stock_move_year_month_delay__delay"
+msgid "Delay"
+msgstr "Késés"
+
+msgctxt "model:babi.report,name:product_category_product"
+msgid "Category - Product"
+msgstr "Kategória – termék"
+
+msgctxt "model:babi.report,name:product_category_product_quantities"
+msgid "Category - Product: Quantities"
+msgstr "Kategória – termék: mennyiségek"
+
+msgctxt "model:babi.report,name:product_product_quantities"
+msgid "Product: Quantities"
+msgstr "Termék: mennyiségek"
+
+msgctxt "model:babi.report,name:stock_move_year_month_delay"
+msgid "Year - Month delays"
+msgstr "Év – hónap késései"
+
+msgctxt "model:babi.expression,name:stock_move_internal_quantity_signed"
+msgid "Internal Quantity (signed)"
+msgstr "Belső mennyiség (előjeles)"
+
+msgctxt ""
+"model:babi.expression,name:stock_move_internal_quantity_signed_inverted"
+msgid "Internal Quantity (signed - inverted)"
+msgstr "Belső mennyiség (előjeles – fordított)"
